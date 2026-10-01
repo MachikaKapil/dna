@@ -1,0 +1,2161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    @media screen and (max-width: 600px) {
+
+    /* 
+       MAIN CONTAINER
+        */
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        width: 100%;
+        height: auto;
+
+        padding: 20px 10px;
+        box-sizing: border-box;
+
+        background-image: url("https://cdn.pixabay.com/photo/2025/09/19/05/48/mountain-range-9842371_640.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+
+
+    /* 
+       LEFT BOX
+        */
+
+    .box {
+        width: 90%;
+        height: auto;
+
+        background-image: url("https://cdn.pixabay.com/photo/2025/09/19/05/48/mountain-range-9842371_640.jpg");
+        background-size: cover;
+
+        border-radius: 20px;
+        box-shadow: 0 0 5px black;
+
+        margin: 10px 0;
+        padding: 20px;
+
+        box-sizing: border-box;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    /* 
+       RIGHT BOX
+        */
+
+    .box2 {
+        width: 90%;
+        height: auto;
+
+        background-image: url("https://cdn.pixabay.com/photo/2025/09/19/05/48/mountain-range-9842371_640.jpg");
+        background-size: cover;
+
+        border-radius: 20px;
+        box-shadow: 0 0 5px black;
+
+        margin: 10px 0;
+        padding: 20px;
+
+        box-sizing: border-box;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+    /* 
+       LOGO
+        */
+
+    .logo {
+        width: 70px;
+        height: 70px;
+
+        border-radius: 10px;
+        margin: 10px;
+
+        box-shadow: 0 0 5px black;
+    }
+
+
+    /*
+       HEADER
+       */
+
+    .header {
+        height: auto;
+        min-height: 220px;
+
+        background-color: lightblue;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        position: relative;
+
+        padding: 20px 10px;
+        box-sizing: border-box;
+    }
+
+
+    /* 
+       NAVIGATION BUTTONS
+        */
+
+    .buttons-container {
+        width: 100%;
+
+        display: flex;
+        flex-wrap: wrap;
+
+        justify-content: center;
+        align-items: center;
+
+        gap: 8px;
+
+        position: static;
+
+        transform: none;
+
+        margin-top: 10px;
+    }
+
+
+    .button {
+        width: 70px;
+        height: 40px;
+
+        border-radius: 10px;
+
+        background-color: rgb(255, 192, 246);
+
+        border: none;
+
+        box-shadow: 0 0 5px black;
+
+        font-size: 11px;
+    }
+
+
+    /* 
+       RESUME
+        */
+
+    .resume {
+        position: static;
+
+        transform: none;
+
+        margin-top: 15px;
+
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+
+    /* 
+       PROFILE IMAGE
+        */
+
+    .profile {
+        width: 50%;
+        height: auto;
+
+        border-radius: 60px;
+
+        margin-bottom: 10px;
+    }
+
+
+    /* 
+       TEXT
+        */
+
+    .description {
+        font-family: Roboto, sans-serif;
+        font-size: 14px;
+
+        margin-top: 15px;
+
+        color: black;
+
+        text-align: center;
+    }
+
+
+    .items {
+        margin-left: 5px;
+        margin-top: 10px;
+
+        font-size: 16px;
+    }
+
+
+    .footer-box-items {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+
+    /* 
+       WHATSAPP
+        */
+
+    #whatsapp {
+        position: fixed;
+
+        width: 60px;
+        height: 60px;
+
+        right: 15px;
+        bottom: 15px;
+
+        top: auto;
+        left: auto;
+    }
+
+
+    /* 
+       PRODUCTS MAIN SECTION
+        */
+
+    .main-container {
+        background-color: bisque;
+
+        width: 100%;
+        height: auto;
+
+        padding: 20px 10px;
+
+        box-sizing: border-box;
+    }
+
+
+    /*
+       PRODUCTS GRID
+       MOBILE = 1 COLUMN
+       = */
+
+    .container2 {
+        display: grid;
+
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+
+        width: 100%;
+        height: auto;
+
+        margin: auto;
+
+        gap: 20px;
+    }
+
+
+    /* 
+       ALL PRODUCT BOXES
+        */
+
+    .box-1,
+    .box-2-2,
+    .box-3,
+    .box-4,
+    .box-5 {
+
+        grid-column: auto;
+        grid-row: auto;
+
+        width: 100%;
+        height: 250px;
+
+        border-radius: 20px;
+
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+
+    /*
+       EDUCATION
+        */
+
+    .education {
+        padding: 20px 10px;
+
+        text-align: center;
+
+        background-color: beige;
+
+        margin: auto;
+
+        overflow-x: auto;
+    }
+
+
+    .education h2 {
+        margin-bottom: 20px;
+    }
+
+
+    .education-table {
+        width: 700px;
+
+        margin: auto;
+
+        border-collapse: collapse;
+
+        background-color: white;
+    }
+
+
+    .education-table th {
+        border: 1px solid black;
+
+        padding: 10px;
+
+        background-color: lightblue;
+    }
+
+
+    .education-table td {
+        border: 1px solid black;
+
+        padding: 10px;
+
+        text-align: center;
+    }
+
+
+    /* 
+       CONTACT
+        */
+
+    .contact {
+        background-color: beige;
+
+        padding: 20px 10px;
+
+        text-align: center;
+    }
+
+
+    .contact h2 {
+        margin-bottom: 20px;
+    }
+
+
+    .contact-form {
+        width: 100%;
+
+        margin: auto;
+
+        padding: 15px;
+
+        border: 2px solid black;
+
+        background-color: white;
+
+        border-radius: 10px;
+
+        box-sizing: border-box;
+    }
+
+
+    .contact-form label {
+        display: block;
+
+        text-align: left;
+
+        margin-top: 10px;
+
+        font-weight: bold;
+    }
+
+
+    .contact-form input {
+        width: 100%;
+
+        padding: 10px;
+
+        margin-top: 5px;
+
+        box-sizing: border-box;
+    }
+
+
+    .contact-form textarea {
+        width: 100%;
+
+        height: 100px;
+
+        padding: 10px;
+
+        margin-top: 5px;
+
+        box-sizing: border-box;
+    }
+
+
+    .contact-form button {
+        width: 150px;
+
+        padding: 10px;
+
+        margin-top: 20px;
+
+        background-color: lightblue;
+
+        border: 1px solid black;
+
+        border-radius: 5px;
+    }
+
+
+    /*
+       FOOTER
+       */
+
+    .footer {
+        background-image: url("https://cdn.pixabay.com/photo/2025/09/19/05/48/mountain-range-9842371_640.jpg");
+
+        display: flex;
+
+        flex-direction: column;
+
+        justify-content: center;
+
+        align-items: center;
+
+        height: auto;
+
+        padding: 20px 10px;
+
+        box-sizing: border-box;
+    }
+
+
+    .footer-box {
+        background-color: rgb(209, 218, 193);
+
+        width: 90%;
+        height: auto;
+
+        min-height: 200px;
+
+        border-radius: 10px;
+
+        padding: 15px;
+
+        box-shadow: 0 0 5px black;
+
+        margin: 10px 0;
+
+        box-sizing: border-box;
+    }
+
+
+    /* 
+       COPYRIGHT
+        */
+
+    .copyright {
+        width: 100%;
+
+        padding: 15px;
+
+        text-align: center;
+
+        border: 2px solid black;
+
+        background-color: lightblue;
+
+        font-size: 16px;
+
+        font-weight: bold;
+
+        box-sizing: border-box;
+    }
+        .box-1 {
+        background-image: url("./images/image1.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .box-2-2 {
+        background-image: url("./images/image2.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .box-3 {
+        background-image: url("./images/image3.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .box-4 {
+        background-image: url("./images/image4.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .box-5 {
+        background-image: url("./images/ganesh banner.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+    @media screen and (min-width: 601px) and (max-width: 1024px) {
+
+    /* 
+       MAIN CONTAINER
+        */
+
+    .container {
+        display: flex;
+        flex-direction: row;
+
+        justify-content: center;
+        align-items: center;
+
+        width: 100%;
+        height: auto;
+
+        padding: 20px;
+
+        box-sizing: border-box;
+
+        background-image: url("https://cdn.pixabay.com/photo/2025/09/19/05/48/mountain-range-9842371_640.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+
+
+    /* 
+       LEFT BOX
+        */
+
+    .box {
+        width: 30%;
+        height: 350px;
+
+        background-image: url("https://cdn.pixabay.com/photo/2025/09/19/05/48/mountain-range-9842371_640.jpg");
+        background-size: cover;
+
+        border-radius: 20px;
+
+        box-shadow: 0 0 5px black;
+
+        margin: 10px;
+
+        padding: 15px;
+
+        box-sizing: border-box;
+
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    /* 
+       RIGHT BOX
+    */
+
+    .box2 {
+        width: 70%;
+        height: 350px;
+
+        background-image: url("https://cdn.pixabay.com/photo/2025/09/19/05/48/mountain-range-9842371_640.jpg");
+        background-size: cover;
+
+        border-radius: 20px;
+
+        box-shadow: 0 0 5px black;
+
+        margin: 10px;
+
+        padding: 15px;
+
+        box-sizing: border-box;
+
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+    }
+
+
+    /* 
+       LOGO
+       */
+
+    .logo {
+        width: 80px;
+        height: 80px;
+
+        border-radius: 10px;
+
+        margin: 10px;
+
+        box-shadow: 0 0 5px black;
+    }
+
+
+    /* 
+       HEADER
+        */
+
+    .header {
+        height: 180px;
+
+        background-color: lightblue;
+
+        display: flex;
+
+        align-items: center;
+
+        position: relative;
+    }
+
+
+    /* 
+       NAVIGATION
+     */
+
+    .buttons-container {
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+
+        gap: 10px;
+
+        position: absolute;
+
+        top: 35px;
+        left: 50%;
+
+        transform: translateX(-50%);
+    }
+
+
+    .button {
+        width: 85px;
+        height: 45px;
+
+        border-radius: 10px;
+
+        background-color: rgb(255, 192, 246);
+
+        border: none;
+
+        box-shadow: 0 0 5px black;
+
+        font-size: 13px;
+    }
+
+
+    /* 
+       RESUME
+     */
+
+    .resume {
+        position: absolute;
+
+        top: 100px;
+        left: 50%;
+
+        transform: translateX(-50%);
+
+        font-size: 18px;
+
+        font-weight: bold;
+    }
+
+
+    /* 
+       PROFILE
+        */
+
+    .profile {
+        width: 55%;
+        height: auto;
+
+        border-radius: 60px;
+
+        margin-bottom: 10px;
+    }
+
+
+    /*
+       TEXT
+     */
+
+    .description {
+        font-family: Roboto, sans-serif;
+
+        font-size: 20px;
+
+        margin-top: 15px;
+
+        color: black;
+    }
+
+
+    .items {
+        margin-left: 10px;
+
+        margin-top: 10px;
+
+        font-size: 17px;
+    }
+
+
+    .footer-box-items {
+        font-size: 17px;
+
+        padding: 12px;
+    }
+
+
+    /* 
+       WHATSAPP
+        */
+
+    #whatsapp {
+        position: fixed;
+
+        width: 70px;
+        height: 70px;
+
+        right: 20px;
+        bottom: 20px;
+
+        top: auto;
+        left: auto;
+    }
+
+
+    /* 
+       PRODUCTS MAIN SECTION
+     */
+
+    .main-container {
+        background-color: bisque;
+
+        width: 100%;
+
+        height: auto;
+
+        padding: 30px;
+
+        box-sizing: border-box;
+    }
+
+
+    /* 
+       PRODUCTS GRID
+       TABLET = 2 COLUMNS */
+
+    .container2 {
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+
+        grid-template-rows: auto;
+
+        width: 100%;
+
+        height: auto;
+
+        margin: auto;
+
+        gap: 20px;
+    }
+
+
+    /* 
+       ALL PRODUCT BOXES
+       */
+
+    .box-1,
+    .box-2-2,
+    .box-3,
+    .box-4,
+    .box-5 {
+
+        grid-column: auto;
+        grid-row: auto;
+
+        width: 100%;
+
+        height: 250px;
+
+        border-radius: 20px;
+
+        background-size: cover;
+
+        background-repeat: no-repeat;
+
+        background-position: center;
+    }
+
+
+    /* 
+       EDUCATION
+        */
+
+    .education {
+        padding: 30px;
+
+        text-align: center;
+
+        background-color: beige;
+
+        margin: auto;
+    }
+
+
+    .education h2 {
+        margin-bottom: 20px;
+    }
+
+
+    .education-table {
+        width: 95%;
+
+        margin: auto;
+
+        border-collapse: collapse;
+
+        background-color: white;
+    }
+
+
+    .education-table th {
+        border: 1px solid black;
+
+        padding: 12px;
+
+        background-color: lightblue;
+    }
+
+
+    .education-table td {
+        border: 1px solid black;
+
+        padding: 12px;
+
+        text-align: center;
+    }
+
+
+    /* =========================
+       CONTACT
+       ========================= */
+
+    .contact {
+        background-color: beige;
+
+        padding: 30px;
+
+        text-align: center;
+    }
+
+
+    .contact h2 {
+        margin-bottom: 20px;
+    }
+
+
+    .contact-form {
+        width: 80%;
+
+        margin: auto;
+
+        padding: 20px;
+
+        border: 2px solid black;
+
+        background-color: white;
+
+        border-radius: 10px;
+
+        box-sizing: border-box;
+    }
+
+
+    .contact-form label {
+        display: block;
+
+        text-align: left;
+
+        margin-top: 10px;
+
+        font-weight: bold;
+    }
+
+
+    .contact-form input {
+        width: 100%;
+
+        padding: 10px;
+
+        margin-top: 5px;
+
+        box-sizing: border-box;
+    }
+
+
+    .contact-form textarea {
+        width: 100%;
+
+        height: 100px;
+
+        padding: 10px;
+
+        margin-top: 5px;
+
+        box-sizing: border-box;
+    }
+
+
+    .contact-form button {
+        width: 150px;
+
+        padding: 10px;
+
+        margin-top: 20px;
+
+        background-color: lightblue;
+
+        border: 1px solid black;
+
+        border-radius: 5px;
+    }
+
+
+    /* 
+       FOOTER
+       */
+
+    .footer {
+        background-image: url("https://cdn.pixabay.com/photo/2025/09/19/05/48/mountain-range-9842371_640.jpg");
+
+        display: flex;
+
+        flex-direction: row;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        align-items: center;
+
+        height: auto;
+
+        padding: 20px;
+
+        gap: 20px;
+
+        box-sizing: border-box;
+    }
+
+
+    .footer-box {
+        background-color: rgb(209, 218, 193);
+
+        width: 45%;
+
+        height: auto;
+
+        min-height: 200px;
+
+        border-radius: 10px;
+
+        padding: 15px;
+
+        box-shadow: 0 0 5px black;
+
+        margin: 0;
+
+        box-sizing: border-box;
+    }
+
+
+    /* 
+       COPYRIGHT
+        */
+
+    .copyright {
+        width: 100%;
+
+        padding: 15px;
+
+        text-align: center;
+
+        border: 2px solid black;
+
+        background-color: lightblue;
+
+        font-size: 17px;
+
+        font-weight: bold;
+
+        box-sizing: border-box;
+    }
+
+    .box-1 {
+    background-image: url("./images/image1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+
+    .box-2-2 {
+        background-image: url("./images/image2.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .box-3 {
+        background-image: url("./images/image3.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .box-4 {
+        background-image: url("./images/image4.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .box-5 {
+        background-image: url("./images/ganesh banner.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+    
+    @media screen and (min-width: 1025px) {
+
+    /* 
+       MAIN CONTAINER
+    */
+
+    .container {
+        display: flex;
+        flex-direction: row;
+
+        justify-content: flex-start;
+        align-items: center;
+        
+        width: 100%;
+        height: 50vh;
+
+        box-sizing: border-box;
+
+        background-image: url("https://cdn.pixabay.com/photo/2025/09/19/05/48/mountain-range-9842371_640.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+
+
+    /* 
+       LEFT BOX
+        */
+
+    .box {
+        width: 20%;
+        height: 90%;
+
+        background-image: url("https://cdn.pixabay.com/photo/2025/09/19/05/48/mountain-range-9842371_640.jpg");
+        background-size: cover;
+
+        border-radius: 20px;
+
+        box-shadow: 0 0 5px black;
+
+        margin: 10px;
+
+        padding: 10px;
+
+        box-sizing: border-box;
+
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    /* 
+       RIGHT BOX
+     */
+
+    .box2 {
+        width: 80%;
+        height: 90%;
+
+        background-image: url("https://cdn.pixabay.com/photo/2025/09/19/05/48/mountain-range-9842371_640.jpg");
+        background-size: cover;
+
+        border-radius: 20px;
+
+        box-shadow: 0 0 5px black;
+
+        margin: 10px;
+
+        padding: 10px;
+
+        box-sizing: border-box;
+
+        display: flex;
+        flex-direction: column;
+
+        justify-content: flex-start;
+    }
+
+
+    /* 
+       LOGO
+     */
+
+    .logo {
+        width: 100px;
+        height: 100px;
+
+        border-radius: 10px;
+
+        margin-left: 10px;
+
+        box-shadow: 0 0 5px black;
+    }
+
+
+    /* 
+       HEADER
+     */
+
+    .header {
+        height: 20vh;
+
+        background-color: lightblue;
+
+        display: flex;
+
+        align-items: center;
+
+        position: relative;
+    }
+
+
+    /* 
+       NAVIGATION
+     */
+
+    .buttons-container {
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+
+        gap: 30px;
+
+        position: absolute;
+
+        top: 35px;
+        left: 50%;
+
+        transform: translateX(-50%);
+    }
+
+
+    .button {
+        width: 100px;
+        height: 50px;
+
+        border-radius: 10px;
+
+        background-color: rgb(255, 192, 246);
+
+        border: none;
+
+        box-shadow: 0 0 5px black;
+
+        font-size: 16px;
+    }
+
+
+    /*
+       RESUME
+     */
+
+    .resume {
+        position: absolute;
+
+        top: 100px;
+        left: 50%;
+
+        transform: translateX(-50%);
+
+        font-size: 20px;
+
+        font-weight: bold;
+    }
+
+
+    /* 
+       PROFILE
+     */
+
+    .profile {
+        width: 60%;
+        height: 60%;
+
+        border-radius: 60px;
+
+        margin-bottom: 10px;
+    }
+
+
+    /* 
+       TEXT
+     */
+
+    .description {
+        font-family: Roboto, sans-serif;
+
+        font-size: 25px;
+
+        margin-top: 15px;
+
+        color: black;
+    }
+
+
+    .items {
+        margin-left: 15px;
+
+        margin-top: 15px;
+
+        font-size: 20px;
+    }
+
+
+    .footer-box-items {
+        font-size: 20px;
+
+        padding: 15px;
+    }
+
+
+    /* 
+       WHATSAPP
+     */
+
+    #whatsapp {
+        position: fixed;
+
+        width: 70px;
+        height: 70px;
+
+        right: 20px;
+        bottom: 20px;
+
+        top: auto;
+        left: auto;
+    }
+
+
+    /* 
+       PRODUCTS MAIN SECTION
+        */
+
+    .main-container {
+        background-color: bisque;
+
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        width: 100%;
+
+        height: auto;
+
+        padding: 30px;
+
+        box-sizing: border-box;
+    }
+
+
+    /* 
+       PRODUCTS GRID
+       LAPTOP = 3 COLUMNS
+     */
+
+    .container2 {
+        display: grid;
+
+        grid-template-columns: 1fr 1fr 1fr;
+
+        grid-template-rows: auto;
+
+        width: 100%;
+           
+        max-width: 1200px;
+
+        height: auto;
+
+        margin: auto;
+
+        gap: 20px;
+
+        /* transition-property: transform; */
+    }
+
+    /* .container2:hover{
+      transform: rotate(60deg);
+    } */
+    /* 
+       ALL PRODUCT BOXES
+        */
+
+    .box-1,
+    .box-2-2,
+    .box-3,
+    .box-4,
+    .box-5 {
+
+        grid-column: auto;
+        grid-row: auto;
+        transition-property: transform;
+        width: 100%;
+
+        height: 280px;
+
+        border-radius: 20px;
+
+        background-size: cover;
+
+        background-repeat: no-repeat;
+
+        background-position: center;
+    }
+     
+    .box-1:hover,
+    .box-2-2:hover,
+    .box-3:hover,
+    .box-4:hover,
+    .box-5:hover {
+      transform: rotate(60deg);
+    }
+
+    /* 
+       EDUCATION
+       */
+
+    .education {
+        padding: 40px;
+
+        text-align: center;
+
+        background-color: beige;
+
+        margin: auto;
+    }
+
+
+    .education h2 {
+        margin-bottom: 20px;
+    }
+
+
+    .education-table {
+        width: 80%;
+
+        margin: auto;
+
+        border-collapse: collapse;
+
+        background-color: white;
+    }
+
+
+    .education-table th {
+        border: 1px solid black;
+
+        padding: 15px;
+
+        background-color: lightblue;
+    }
+
+
+    .education-table td {
+        border: 1px solid black;
+
+        padding: 15px;
+
+        text-align: center;
+    }
+
+
+    /* 
+       CONTACT
+        */
+
+    .contact {
+        background-color: beige;
+
+        padding: 40px;
+
+        text-align: center;
+    }
+
+
+    .contact h2 {
+        margin-bottom: 20px;
+    }
+
+
+    .contact-form {
+        width: 500px;
+
+        max-width: 90%;
+
+        margin: auto;
+
+        padding: 20px;
+
+        border: 2px solid black;
+
+        background-color: white;
+
+        border-radius: 10px;
+
+        box-sizing: border-box;
+    }
+
+
+    .contact-form label {
+        display: block;
+
+        text-align: left;
+
+        margin-top: 10px;
+
+        font-weight: bold;
+    }
+
+
+    .contact-form input {
+        width: 100%;
+
+        padding: 10px;
+
+        margin-top: 5px;
+
+        box-sizing: border-box;
+    }
+
+
+    .contact-form textarea {
+        width: 100%;
+
+        height: 100px;
+
+        padding: 10px;
+
+        margin-top: 5px;
+
+        box-sizing: border-box;
+    }
+
+
+    .contact-form button {
+        width: 150px;
+
+        padding: 10px;
+
+        margin-top: 20px;
+
+        background-color: lightblue;
+
+        border: 1px solid black;
+
+        border-radius: 5px;
+    }
+
+
+    /* 
+       FOOTER
+        */
+
+    .footer {
+        background-image: url("https://cdn.pixabay.com/photo/2025/09/19/05/48/mountain-range-9842371_640.jpg");
+
+        display: flex;
+
+        flex-direction: row;
+
+        justify-content: space-evenly;
+
+        align-items: center;
+
+        height: auto;
+
+        min-height: 50vh;
+
+        padding: 30px;
+
+        box-sizing: border-box;
+
+        gap: 20px;
+    }
+
+
+    .footer-box {
+        background-color: rgb(209, 218, 193);
+
+        width: 250px;
+        height: 300px;
+
+        border-radius: 10px;
+
+        padding: 10px;
+
+        box-shadow: 0 0 5px black;
+
+        margin-top: 10px;
+
+        box-sizing: border-box;
+    }
+
+
+    /* 
+       COPYRIGHT
+       */
+
+    .copyright {
+        width: 100%;
+
+        padding: 15px;
+
+        text-align: center;
+
+        border: 2px solid black;
+
+        background-color: lightblue;
+
+        font-size: 18px;
+
+        font-weight: bold;
+
+        box-sizing: border-box;
+    }
+
+    /* PRODUCT IMAGES */
+
+        .box-1 {
+            background-image: url("./images/image1.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .box-2-2 {
+            background-image: url("./images/image2.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .box-3 {
+            background-image: url("./images/image3.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .box-4 {
+            background-image: url("./images/image4.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .box-5 {
+            background-image: url("./images/ganesh banner.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+}
+    </style>    
+</head>
+<body>
+    <header class="header">
+        <div>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI9P_xWgFzH5e-mhznfQjdVVTlOqf__RPMA64Erm2ajw&s=10"
+          alt="Company Logo"
+          class="logo">
+        </div>
+        <nav class="buttons-container">
+            <a href="#home"><button class="button">HOME</button></a>
+            <a href="#about"><button class="button">ABOUT</button></a>
+            <a href="#education"><button class="button">EDUCATION</button></a>
+            <a href="#contact"><button class="button">CONTACT</button></a>
+            <a href="#products"><button class="button">PRODUCTS</button></a>
+        </nav>
+     <a href="./resume.html" class="resume">My Resume</a>
+    </header>
+    <div class="container" id = "home">
+        <img id = "whatsapp" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZJTBdWP8cs1v6gd4Trr-NhPbyr4bePANXJFyTnGVi6A&s=10"/>
+
+        <div class="box">
+          <img class="profile" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0PmcW6QpVxtWXOhqIIs8Cdwmjvyf79fPD9Y33Vxxe1A&s=10"/>
+
+          <h4 style="color:white">Trainee Software Engineer</h4>
+        </div>
+        <div class="box2">
+          <p class="description">
+            A Trainee Software Engineer working as a React Developer, responsible for assisting in the design and development of front-end features under the guidance of senior engineers. Involved in building UI components, implementing responsive layouts, fixing bugs, and learning to write clean, maintainable code following team standards. Actively developing skills in React fundamentals, state management, API integration, and version control (Git), while gaining exposure to the full software development lifecycle in a collaborative team environment.
+            
+            Key skills to highlight for this profile:
+            <ul class="items" style="color:white;">
+                <li> React.js (components, props, hooks, JSX)</li>
+                <li>JavaScript (ES6+), HTML5, CSS3, Flexbox/Grid</li>
+                <li>Basic state management (useState/useContext, or Redux if learned)</li>
+                <li>REST API integration (fetch/axios)</li>
+                <li>Git/GitHub</li>
+                <li>Debugging with browser dev tools</li>
+                <li>Responsive/mobile-first design principles</li>
+            </ul>
+          </p>       
+        </div>
+    </div>
+    <div class="main-container" id="products">
+    <div class="container2">
+        <div class="box-1">
+
+        </div>
+        <div class="box-2-2">
+
+        </div>
+        <div class="box-3">
+
+        </div>
+        <div class="box-4">
+
+        </div>
+        <div class="box-5">
+         
+        </div>
+    </div>
+    <marquee style="margin-top: 20px; font-weight: bold;">Buy Adorable Ganesha toys for Happier and Brighter home </marquee>
+    <marquee style="margin-top: 20px; font-weight: bold;"> Special Festival Upto 20% Off</marquee>
+    </div>
+
+    <section id="education" class="education">
+
+    <h2>Education</h2>
+
+    <table border="1" class="education-table">
+
+        <tr>
+            <th>Qualification</th>
+            <th>Specialization</th>
+            <th>University / College</th>
+        </tr>
+
+        <tr>
+            <td>Master's</td>
+            <td>Computer Science</td>
+            <td>Kakatiya University</td>
+        </tr>
+
+        <tr>
+            <td>Bachelor's</td>
+            <td>Civil Engineering</td>
+            <td>Jawaharlal Nehru Technological University Hyderabad</td>
+        </tr>
+
+        <tr>
+            <td>Intermediate</td>
+            <td>MPC</td>
+            <td>Narayana Junior College</td>
+        </tr>
+
+        <tr>
+            <td>SSC</td>
+            <td>-</td>
+            <td>SR High School</td>
+        </tr>
+
+    </table>
+
+</section>
+
+<section class="contact" id="contact">
+
+    <h2>Contact Us / Join Our Company</h2>
+
+    <form class="contact-form">
+
+        <label>Name:</label>
+        <input type="text" placeholder="Enter your name">
+
+        <label>Email:</label>
+        <input type="email" placeholder="Enter your email">
+
+        <label>Phone:</label>
+        <input type="tel" placeholder="Enter your phone number">
+
+        <label>Qualification:</label>
+        <input type="text" placeholder="Enter your qualification">
+
+        <label>Message:</label>
+        <textarea placeholder="Enter your message"></textarea>
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+</section>
+
+    <div class="footer" id = "about">
+      <div class="footer-box">
+        <ul class="footer-box-items">
+            <li>Aja Coding Tutor Pvt Ltd</li>
+            <li>AJA Consulting Services Pvt. Ltd.
+            6th Floor, Unit Nos. 617 & 613
+            Techno-1 Building ("Sandhya Techno-1")
+            Radhe Nagar, Khajaguda, Rai Durg,
+            Hyderabad, Rangareddy, Telangana - 500104</li>
+            <li>internships@codingtutor.in</li>
+            <li>+91 9697969788</li>
+        </ul>
+      </div>
+      <div class="footer-box">
+        <ul class="footer-box-items">
+            <li>Company</li>
+            <li>Pricing</li>
+            <li>Our Team</li>
+            <li>Careers</li>
+            <li>Programs</li>
+            <li>Join Our Projects</li>
+            <li>Contact Us</li>
+        </ul>
+      </div>
+      <div class="footer-box">
+        <ul class="footer-box-items">
+            <li>Aja Coding Tutor Pvt Ltd</li>
+            <li>AJA Consulting Services Pvt. Ltd.
+            6th Floor, Unit Nos. 617 & 613
+            Techno-1 Building ("Sandhya Techno-1")
+            Radhe Nagar, Khajaguda, Rai Durg,
+            Hyderabad, Rangareddy, Telangana - 500104</li>
+            <li>internships@codingtutor.in</li>
+            <li>+91 9697969788</li>
+        </ul>
+      </div>
+      <div class="footer-box">
+        <ul class="footer-box-items">
+            <li>Aja Coding Tutor Pvt Ltd</li>
+            <li>AJA Consulting Services Pvt. Ltd.
+            6th Floor, Unit Nos. 617 & 613
+            Techno-1 Building ("Sandhya Techno-1")
+            Radhe Nagar, Khajaguda, Rai Durg,
+            Hyderabad, Rangareddy, Telangana - 500104</li>
+            <li>internships@codingtutor.in</li>
+            <li>+91 9697969788</li>
+        </ul>
+      </div>
+      <div class="footer-box">
+        <ul class="footer-box-items">
+            <li>Aja Coding Tutor Pvt Ltd</li>
+            <li>AJA Consulting Services Pvt. Ltd.
+            6th Floor, Unit Nos. 617 & 613
+            Techno-1 Building ("Sandhya Techno-1")
+            Radhe Nagar, Khajaguda, Rai Durg,
+            Hyderabad, Rangareddy, Telangana - 500104</li>
+            <li>internships@codingtutor.in</li>
+            <li>+91 9697969788</li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      All Rights Reserved to Kapil
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+  <!-- @media screen and (min-width: 1025px){
+        .container{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            height: 50vh;
+            /* background-color: rgb(255, 0, 0); */
+            background-image: url("https://cdn.pixabay.com/photo/2025/09/19/05/48/mountain-range-9842371_640.jpg");
+
+            background-color: rgba(255, 0, 0, 0.5);
+            
+        }
+        .box{
+            width: 20%;
+            height: 90%;
+            background-image: url("https://cdn.pixabay.com/photo/2025/09/19/05/48/mountain-range-9842371_640.jpg");
+            
+            /* background-color: #e09b9b; */
+            border-radius: 20px;
+            box-shadow: 0 0 5px black;
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+            align-items: center;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding: 10px;
+        }  
+        .box2{
+            width:80%;
+            height:90%;
+            /* background-color: #e09b9b; */
+            background-image: url("https://cdn.pixabay.com/photo/2025/09/19/05/48/mountain-range-9842371_640.jpg");
+            border-radius: 20px;
+            box-shadow: 0 0 5px black;
+            margin: 10px;
+            padding:10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        } 
+        .logo{
+            width:100px;
+            height: 100px;
+            border-radius: 10px;
+            margin-left: 10px;
+            box-shadow: 0 0 5px black;
+        }
+        /* .header{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            height:20vh;
+            background-color: lightblue;
+        }
+        .buttons-container{
+            width:5000px;
+            display:flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-left: 100px;
+        } */
+
+        .header {
+            height: 20vh;
+            background-color: lightblue;
+ 
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+
+        .buttons-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+
+            position: absolute;
+            top: 35px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .resume {
+            position: absolute;
+            top: 100px;
+            left: 50%;
+            transform: translateX(-50%);
+
+            font-size: 20px;
+            font-weight: bold;
+            /* color: black; */
+        }
+        .footer{
+          /* background-color: rgb(164, 82, 188);     */
+            background-image: url("https://cdn.pixabay.com/photo/2025/09/19/05/48/mountain-range-9842371_640.jpg");
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            height:50vh;
+            padding:10px;
+        }
+        .footer-box{
+            background-color: rgb(209, 218, 193);
+            width:300px;
+            height:300px;
+            border-radius: 10px;
+            padding:10px;
+            box-shadow: 0 0 5px black;
+            margin-top: 10px;
+        }
+        .button{
+            width: 100px;
+            height: 50px;
+            border-radius:10px;
+            background-color: rgb(255, 192, 246);
+            border:none;
+            box-shadow: 0 0 5px black;
+        }
+
+        .profile{
+            width:60%;
+            height:60%;
+            border-radius: 60px;
+            margin-bottom: 10px;
+        }
+
+        .description{
+            font-family: roboto;
+            font-size: 25px; 
+            margin-top: 15px;
+            color:black;
+        }
+
+        .items{
+            margin-left: 15px;
+            margin-top: 15px;
+            font-size: 20px;
+        }
+
+        .footer-box-items{
+            font-size:20px;
+            padding:15px;
+          
+        }
+        #whatsapp{
+            position:fixed;
+            top:640px;
+            left:1400px;
+            width:100px;
+            height:100px;
+        }
+
+        .main-container{
+            /* background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs4czCTXRj0hkQSRTsyuyUPrjU61zeSLtcq0jMuWu-lA&s=10"); */
+            background-color: bisque;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 800px;
+            padding-top: 30px;
+            
+        }
+       
+        .container2{
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            width:1000px;
+            height:650px;
+            margin:auto;
+            gap:20px;
+            
+        }
+        .box-1{
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsGYAlpquJOZBsyKhXvLUy6UnJDBkjGBG8mLkdCFLwyQ&s=10");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 100%;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            /* border:2px solid black; */
+            border-radius: 20px;
+          
+        }
+        
+        .box-2-2{
+            background-image: url("https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSmW7gcQcl1lt7A0uuEPY98gpcdb0WY6OseprePNiX3enVJlUyNjibYC6YGcbBhfgchrwJVf2XBMYKWyeO4FSj6ihOY25R8EQBLZNV0vn4");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 100%;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            /* border:2px solid black; */
+            border-radius: 20px;
+
+        }
+        
+        .box-3{
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiA_c9TGdyGdsNGwLBVaykuz_qudMH3YL1OYUIDHwC8A&s=10");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 100%;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 2;
+            grid-column-end: 3;
+            /* border:2px solid black; */
+            border-radius: 20px;
+            
+        }
+         .box-4{
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2Hij-lLRF0MjEy8hctirMkbdElrl3jwM2uzGsE1J77w&s=10");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 100%;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 2;
+            grid-column-end: 3;
+            /* border:2px solid black; */
+            border-radius: 20px;
+            
+        }
+         .box-5{
+            background-image: url("./images/ganesh banner.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 100%;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            grid-column-start: 3;
+            grid-column-end: 5;
+            /* border:2px solid black; */
+            border-radius: 20px;
+
+        }
+        .education {
+            padding: 40px;
+            text-align: center;
+            background-color: beige;
+            margin: auto;
+        }
+
+        .education h2 {
+            margin-bottom: 20px;
+        }
+
+        .education-table {
+            width: 80%;
+            margin: auto;
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+        .education-table th {
+            border: 1px solid black;
+            padding: 15px;
+            background-color: lightblue;
+        }
+
+        .education-table td {
+            border: 1px solid black;
+            padding: 15px;
+            text-align: center;
+        }
+        .copyright {
+            width: 100%;
+            padding: 15px;
+            text-align: center;
+            border: 2px solid black;
+            background-color: lightblue;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .contact {
+            background-color: beige;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .contact h2 {
+            margin-bottom: 20px;
+        }
+
+        .contact-form {
+            width: 500px;
+            margin: auto;
+            padding: 20px;
+            border: 2px solid black;
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        .contact-form label {
+            display: block;
+            text-align: left;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .contact-form input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+        }
+
+        .contact-form textarea {
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+            margin-top: 5px;
+        }
+
+        .contact-form button {
+            width: 150px;
+            padding: 10px;
+            margin-top: 20px;
+            background-color: lightblue;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+    } -->

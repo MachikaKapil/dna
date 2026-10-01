@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    @keyframes myani{
+    0%{
+      background-image: url("https://thumbs.dreamstime.com/b/incredibly-beautiful-sunset-sun-lake-sunrise-landscape-panorama-nature-sky-amazing-colorful-clouds-fantasy-design-115177001.jpg");
+      border-radius: 10%;
+      /* margin-top: 20px;
+      margin-left: 20px; */
+      box-shadow: 0 0 10px black;
+    }
+     
+    20%{
+        background-image: url("https://static.vecteezy.com/system/resources/thumbnails/052/401/834/small/art-abstract-blurred-beautiful-spring-background-with-fresh-leaves-photo.jpg");
+        border-radius: 20%;
+        /* margin-top: 40px;
+        margin-left: 40px; */
+        box-shadow: 0 0 12px rgb(189, 35, 35);
+
+    }
+     
+    40%{
+       background-image:url("https://i0.wp.com/picjumbo.com/wp-content/uploads/crazy-iridescent-smoke-abstract-background-free-image.jpeg?w=600&quality=80");
+       border-radius: 30%;
+       /* margin-top: 60px;
+       margin-left: 60px; */
+       box-shadow: 0 0 14px rgb(18, 167, 50);
+    }
+
+    60%{
+       background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20240427/pngtree-misty-forest-ariel-view-nature-webbanner-image_15720313.jpg");
+       border-radius: 40%;
+       /* margin-top: 80px;
+       margin-left: 80px; */
+       box-shadow: 0 0 16px rgb(102, 18, 167);
+    }
+       
+    80%{
+      background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSwRHgONzy5Kh1V3_3wUTn9dPqNww-egjEpuauzyjm2b5mXuDDaQNh8dYK&s=10");
+      border-radius: 50%;
+      /* margin-top: 100px;
+      margin-left: 100px; */
+      box-shadow: 0 0 18px rgb(50, 18, 167);
+    } 
+     
+    100%{
+       background-image: url("https://static.vecteezy.com/system/resources/thumbnails/082/450/839/small/cairn-stone-balance-with-sunset-mountains-background-photo.jpg");
+       border-radius: 60%;
+       /* margin-top: 120px;
+       margin-left: 120px; */
+       box-shadow: 0 0 20px rgb(167, 18, 63);
+    }
+    }  
+
+    @keyframes mani{
+    0%{
+      background-image: url("https://thumbs.dreamstime.com/b/incredibly-beautiful-sunset-sun-lake-sunrise-landscape-panorama-nature-sky-amazing-colorful-clouds-fantasy-design-115177001.jpg");
+      border-radius: 10%;
+      margin-top: 20px;
+      margin-left: 20px;
+      box-shadow: 0 0 10px black;
+    }
+     
+    20%{
+        background-image: url("https://static.vecteezy.com/system/resources/thumbnails/052/401/834/small/art-abstract-blurred-beautiful-spring-background-with-fresh-leaves-photo.jpg");
+        border-radius: 20%;
+        margin-top: 40px;
+        margin-left: 40px;
+        box-shadow: 0 0 12px rgb(189, 35, 35);
+
+    }
+     
+    40%{
+       background-image:url("https://i0.wp.com/picjumbo.com/wp-content/uploads/crazy-iridescent-smoke-abstract-background-free-image.jpeg?w=600&quality=80");
+       border-radius: 30%;
+       margin-top: 60px;
+       margin-left: 60px;
+       box-shadow: 0 0 14px rgb(18, 167, 50);
+    }
+
+    60%{
+       background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20240427/pngtree-misty-forest-ariel-view-nature-webbanner-image_15720313.jpg");
+       border-radius: 40%;
+       margin-top: 80px;
+       margin-left: 80px;
+       box-shadow: 0 0 16px rgb(102, 18, 167);
+    }
+       
+    80%{
+      background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSwRHgONzy5Kh1V3_3wUTn9dPqNww-egjEpuauzyjm2b5mXuDDaQNh8dYK&s=10");
+      border-radius: 50%;
+      margin-top: 100px;
+      margin-left: 100px;
+      box-shadow: 0 0 18px rgb(50, 18, 167);
+    } 
+     
+    100%{
+       background-image: url("https://static.vecteezy.com/system/resources/thumbnails/082/450/839/small/cairn-stone-balance-with-sunset-mountains-background-photo.jpg");
+       border-radius: 60%;
+       margin-top: 120px;
+       margin-left: 120px;
+       box-shadow: 0 0 20px rgb(167, 18, 63);
+    }  
+  }
+   
+  
+  .container{
+    background-color: antiquewhite;
+    width:600px;
+    height:400px;
+    box-shadow:0 0 8px black;
+    margin: 30px auto;
+    animation-name: myani;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    /* animation-delay: 5s; */
+    animation-direction: alternate;
+    transition-property: transform;
+    transition-duration: 2s;
+  }
+
+  .container2{
+    background-color: aquamarine;
+    width:600px;
+    height:400px;
+    box-shadow:0 0 8px black;
+    margin: 30px auto;
+    animation-name: mani;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    /* animation-delay: 5s; */
+    animation-direction: alternate;
+    transition-property: transform;
+    transition-duration: 2s;
+  }
+
+  .container:hover{
+    /* transform:translateX(500px); */
+    /* transform:translateY(500px); */
+    transform:translate(500px, 500px);
+    /* transform: scaleX(1.5);
+    transform: scaleY(1.5); */
+    transform: scale(1.5);
+    transform: rotate(180deg);
+  }
+
+  .container2:hover{
+    /* transform:translateX(500px); */
+    /* transform:translateY(500px); */
+    transform:translate(500px, 500px);
+    /* transform: scaleX(1.5);
+    transform: scaleY(1.5); */
+    transform: scale(1.5);
+    transform: rotate(180deg);
+  }
+  .main-container{
+    background-color: bisque;
+  }
+
+</style> 
+</head>
+<body class="main-container">
+    <div class="container">
+
+    </div>
+    <div class="container2">
+
+    </div>
+</body>
+</html>
